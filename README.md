@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 Music in Veins
 
-## Getting Started
+**Music in Veins** is a responsive, modern music discovery website built using **Next.js** and **Acertinity UI**. It offers a sleek interface for exploring songs, albums, and artists — putting music at the heart of your experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🎧 Browse songs, albums, and trending artists
+- 🔍 Real-time search functionality
+- 🌙 Light/Dark mode toggle
+- 📱 Fully responsive on mobile, tablet, and desktop
+- ⚡ Blazing-fast navigation with Next.js
+- 🎨 Beautifully styled with Acertinity UI and Tailwind CSS
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Frontend Framework:** [Next.js](https://nextjs.org/)
+- **UI Library:** [Acertinity UI](https://acertinity.dev)
+- **Styling:** Tailwind CSS (via Acertinity UI)
+- **Deployment:** Vercel / Netlify / Custom server
 
-To learn more about Next.js, take a look at the following resources:
+---
+## 📁 Folder Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+/
+├── components/ # Reusable components (Navbar, Player, etc.)
+├── pages/ # Next.js pages (Home, Discover, etc.)
+├── public/ # Static assets (images, icons)
+├── styles/ # Global and custom CSS
+├── utils/ # Helper functions and constants
+├── acertinity.config.ts # UI theming configuration
+└── ...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧑‍💻 Getting Started
 
-## Deploy on Vercel
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/music-in-veins.git
+   cd music-in-veins
+2. Install Dependencies
+   npm install
+   or
+   yarn install
+3.Start Development Server
+  npm run dev
+  or
+  yarn dev
+4.Open http://localhost:3000 to view it in the browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📦 Build & Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  npm run build     # Compile for production
+  npm run start     # Start the production server
+
+
+🙌 Acknowledgements
+Next.js
+
+Acertinity UI
+
+Tailwind CSS
+
+Vercel
+
+📬 Contact
+Feel free to reach out for collaborations, suggestions, or feedback:
+📧 sarthak0427@gmail.com
