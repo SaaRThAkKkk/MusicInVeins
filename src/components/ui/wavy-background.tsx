@@ -151,7 +151,7 @@ export const WavyBackground = ({
   waveOpacity = 0.5,
   ...props
 }: {
-  children?: any;
+  children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
   colors?: string[];
@@ -163,8 +163,7 @@ export const WavyBackground = ({
   [key: string]: any;
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationIdRef = useRef<number | null>(null); // ✅ fixed here
-  const noise = createNoise3D();
+  const animationIdRef = useRef<number | null>(null);
   const [isSafari, setIsSafari] = useState(false);
 
   const waveColors = colors ?? [
@@ -175,21 +174,23 @@ export const WavyBackground = ({
     "#22d3ee",
   ];
 
-  const getSpeed = () => {
-    switch (speed) {
-      case "slow":
-        return 0.001;
-      case "fast":
-        return 0.002;
-      default:
-        return 0.001;
-    }
-  };
-
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext("2d");
     if (!canvas || !ctx) return;
+
+    const noise = createNoise3D();
+
+    const getSpeed = () => {
+      switch (speed) {
+        case "slow":
+          return 0.001;
+        case "fast":
+          return 0.002;
+        default:
+          return 0.001;
+      }
+    };
 
     let w = (ctx.canvas.width = window.innerWidth);
     let h = (ctx.canvas.height = window.innerHeight);
@@ -266,4 +267,5 @@ export const WavyBackground = ({
     </div>
   );
 };
+
 
