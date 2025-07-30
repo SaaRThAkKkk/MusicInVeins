@@ -1,4 +1,4 @@
-import { footer } from 'motion/react-client'
+
 import React from 'react'
 
 function Footer() {
